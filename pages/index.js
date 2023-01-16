@@ -42,7 +42,6 @@ export default function Home({ posts }) {
               ))}
           </ul>
         </section>
-        <Link href="/posts/first-post">That's a page !</Link>
       </main>
     </Layout>
   );

@@ -26,8 +26,6 @@ export async function getStaticProps({ params }) {
   const filtered = data?.filter((post) => post.id === params.id);
   const post = filtered[0];
 
-  console.log(post);
-
   return {
     props: {
       post
@@ -41,7 +39,6 @@ const Post = ({ post }) => {
     <Layout post>
       <Head>
         <title>{post.title}</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <h1 className={styles.title}>{post.title}</h1>
