@@ -4,3 +4,7 @@
   flex-direction: column;
   align-items: center;
 }
+
+.backToHome {
+  margin: 2rem 0 0;
+}
