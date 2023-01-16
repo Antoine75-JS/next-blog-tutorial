@@ -1,6 +1,6 @@
 # **BASIC BLOG WITH NEXT STARTER**
 
-_Nextjs 12 app_
+_Nextjs app_
 
 dev:
 
