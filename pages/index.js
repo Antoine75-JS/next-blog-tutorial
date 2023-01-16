@@ -9,6 +9,7 @@ import data from '../data/posts.json';
 
 export async function getStaticProps() {
   const posts = data;
+
   return {
     props: {
       posts
@@ -33,7 +34,9 @@ export default function Home({ posts }) {
             {posts &&
               posts.map(({ id, title, content }) => (
                 <li key={id} className={utilsStyles.headingMd}>
-                  <h2>{title}</h2>
+                  <Link href={`/posts/${id}`}>
+                    <h2>{title}</h2>
+                  </Link>
                   <p>{content}</p>
                 </li>
               ))}
